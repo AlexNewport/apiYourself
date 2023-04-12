@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad jokes API demonstration</title>
+    <script type="text/javascript" src="./lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/dadJokes.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Welcome to the Dad Joke Generator</h1>
+        <div id="dadJoke">
+            <p id="dadJokeText">Click a button to generate a dad joke</p>
+        </div>
+        <div id="dadJokesMenu">
+            <button class="shadowButton" onclick="displayRandomDadJoke()">Click for a random dad joke</button>
+            <br>
+            <button class="shadowButton" onclick="displaySpecificDadJoke()">Click to search for a dad joke with the following word:</button>
+            <input type="text" id="searchWord">
+        </div>
+    </div>
+</body>
+</html>
